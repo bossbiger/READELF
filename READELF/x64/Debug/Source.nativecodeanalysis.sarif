@@ -1,0 +1,1299 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_ident' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_ident"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_entry' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_entry"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_phoff' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_phoff"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_shoff' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_shoff"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_flags' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_flags"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_ehsize' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_ehsize"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_phentsize' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_phentsize"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_phnum' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_phnum"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_shentsize' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_shentsize"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_shnum' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_shnum"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_INFO::e_shstrndx' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_INFO::e_shstrndx"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_Sinfo::sh_name' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1,
+                  "endLine": 38,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_Sinfo::{ctor}",
+                  "decoratedName": "??0ELF_32_Sinfo@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_Sinfo::sh_name"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_Sinfo::sh_flags' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1,
+                  "endLine": 38,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_Sinfo::{ctor}",
+                  "decoratedName": "??0ELF_32_Sinfo@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_Sinfo::sh_flags"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_Sinfo::sh_addr' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1,
+                  "endLine": 38,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_Sinfo::{ctor}",
+                  "decoratedName": "??0ELF_32_Sinfo@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_Sinfo::sh_addr"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_Sinfo::sh_offset' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1,
+                  "endLine": 38,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_Sinfo::{ctor}",
+                  "decoratedName": "??0ELF_32_Sinfo@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_Sinfo::sh_offset"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_Sinfo::sh_size' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1,
+                  "endLine": 38,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_Sinfo::{ctor}",
+                  "decoratedName": "??0ELF_32_Sinfo@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_Sinfo::sh_size"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_Sinfo::sh_link' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1,
+                  "endLine": 38,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_Sinfo::{ctor}",
+                  "decoratedName": "??0ELF_32_Sinfo@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_Sinfo::sh_link"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_Sinfo::sh_info' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1,
+                  "endLine": 38,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_Sinfo::{ctor}",
+                  "decoratedName": "??0ELF_32_Sinfo@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_Sinfo::sh_info"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_Sinfo::sh_addralign' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1,
+                  "endLine": 38,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_Sinfo::{ctor}",
+                  "decoratedName": "??0ELF_32_Sinfo@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_Sinfo::sh_addralign"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_Sinfo::sh_entsize' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 1,
+                  "endLine": 38,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_Sinfo::{ctor}",
+                  "decoratedName": "??0ELF_32_Sinfo@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_Sinfo::sh_entsize"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_PROG_HDR_INFO::p_vaddr' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1,
+                  "endLine": 49,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_PROG_HDR_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_PROG_HDR_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_PROG_HDR_INFO::p_vaddr"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_PROG_HDR_INFO::p_offset' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1,
+                  "endLine": 49,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_PROG_HDR_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_PROG_HDR_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_PROG_HDR_INFO::p_offset"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_PROG_HDR_INFO::p_paddr' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1,
+                  "endLine": 49,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_PROG_HDR_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_PROG_HDR_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_PROG_HDR_INFO::p_paddr"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_PROG_HDR_INFO::p_filesz' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1,
+                  "endLine": 49,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_PROG_HDR_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_PROG_HDR_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_PROG_HDR_INFO::p_filesz"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_PROG_HDR_INFO::p_memsz' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1,
+                  "endLine": 49,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_PROG_HDR_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_PROG_HDR_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_PROG_HDR_INFO::p_memsz"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_PROG_HDR_INFO::p_flags' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1,
+                  "endLine": 49,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_PROG_HDR_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_PROG_HDR_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_PROG_HDR_INFO::p_flags"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable 'ELF_32_PROG_HDR_INFO::p_align' n'est pas initialisée. Initialisez toujours une variable membre (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1,
+                  "endLine": 49,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32_PROG_HDR_INFO::{ctor}",
+                  "decoratedName": "??0ELF_32_PROG_HDR_INFO@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "ELF_32_PROG_HDR_INFO::p_align"
+          }
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Déréférencement du pointeur NULL 'p'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                },
+                "region": {
+                  "startLine": 168,
+                  "startColumn": 6,
+                  "endLine": 168,
+                  "endColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "main",
+                  "decoratedName": "main",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 111,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 112,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 113,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 114,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 115,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 116,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 117,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 124,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 125,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 134,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 135,
+                            "startColumn": 72
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 72
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 137,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 138,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 143,
+                            "startColumn": 36
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 144,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 144,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 154,
+                            "startColumn": 72
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 155,
+                            "startColumn": 72
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 156,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 157,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 157,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 164,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 165,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "'p' peut avoir la valeur NULL (Entrer dans cette branche)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 166,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+                          },
+                          "region": {
+                            "startLine": 168,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "'p' est déréférencé, mais peut encore avoir la valeur NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31630.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/inc/ELF32_class.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "49177f99903c0911c607121a212a4c2c585d45e37d5457d07a44ae98f222e814"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/Source.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "56f04a07843cecfa065d17c3c6f67bb86996cf510706f75de5aa0272b84f739a"
+          }
+        }
+      ]
+    }
+  ]
+}

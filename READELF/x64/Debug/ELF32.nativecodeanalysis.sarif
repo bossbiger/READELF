@@ -1,0 +1,2497 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'ELF_METADATA' pourrait être '0'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 6,
+                  "endLine": 21,
+                  "endColumn": 58
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_elf_metadata",
+                  "decoratedName": "?parse_elf_metadata@ELF_32@@AEAA_NXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que 'elfile==0' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_METADATA' est une sortie de 'fread' (déclarée au niveau de c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdio.h:239)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que '<condition de branche>' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_METADATA' ne doit pas être NULL, car cela n'est pas cohérent avec l'annotation SAL sur 'fread'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Déréférencement du pointeur NULL 'ELF_METADATA'. Voir la ligne 21 pour un emplacement antérieur dans lequel cela peut se produire"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 7,
+                  "endLine": 22,
+                  "endColumn": 140
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_elf_metadata",
+                  "decoratedName": "?parse_elf_metadata@ELF_32@@AEAA_NXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_METADATA' peut avoir la valeur NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Entrer dans cette branche, (supposer '<condition de branche>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 109
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que '<condition de branche>' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 109
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_METADATA' est déréférencé, mais peut encore avoir la valeur NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'this->ELF_SHRD' pourrait être '0'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 6,
+                  "endLine": 54,
+                  "endColumn": 76
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_shdrs",
+                  "decoratedName": "?parse_shdrs@ELF_32@@AEAA_NXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 37,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que 'this->elfile==0' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 42,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que 'this->ELF_METADATA==0' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 48,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que 'ELF_METADATA->e_shnum==0' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 51,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 52,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 53,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 54,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SHRD' est une sortie de 'fread' (déclarée au niveau de c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdio.h:239)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 54,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que '<condition de branche>' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 54,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'this->ELF_SHRD' ne doit pas être NULL, car cela n'est pas cohérent avec l'annotation SAL sur 'fread'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'ELF_PROGH' pourrait être '0'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 6,
+                  "endLine": 85,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_prog_hdrs",
+                  "decoratedName": "?parse_prog_hdrs@ELF_32@@AEAA_NXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 66,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que 'this->elfile==0' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 71,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que 'this->ELF_METADATA==0' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 78,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que 'ELF_METADATA->e_phnum==0' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 81,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 83,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 84,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 85,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_PROGH' est une sortie de 'fread' (déclarée au niveau de c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdio.h:239)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 85,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que '<condition de branche>' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 85,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_PROGH' ne doit pas être NULL, car cela n'est pas cohérent avec l'annotation SAL sur 'fread'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'string_table_ptr' pourrait être '0'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 8,
+                  "endLine": 100,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_string_table",
+                  "decoratedName": "?parse_string_table@ELF_32@@AEAA_NXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 92,
+                            "startColumn": 45
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que '<condition de branche>' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 95,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 95,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Entrer dans cette boucle, (supposer 'i<this->sections_num()')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 96,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Entrer dans cette branche, (supposer 'ELF_SHRD[i].sh_type==3')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 97,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 98,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 99,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 100,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "'string_table_ptr' est une sortie de 'fread' (déclarée au niveau de c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdio.h:239)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 100,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que '<condition de branche>' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 100,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "'string_table_ptr' ne doit pas être NULL, car cela n'est pas cohérent avec l'annotation SAL sur 'fread'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'ELF_SYMBT_ENTRY_PTR' pourrait être '0'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 381,
+                  "startColumn": 8,
+                  "endLine": 381,
+                  "endColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_symbol_table",
+                  "decoratedName": "?parse_symbol_table@ELF_32@@QEAAPEAUELF_SYMBT_INFO@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 373,
+                            "startColumn": 47
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 377,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 378,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_PTR' peut avoir la valeur NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 379,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 380,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_PTR' est un argument Entrée/sortie dans 'fread' (déclaré au niveau de c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdio.h:239)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que '<condition de branche>' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_PTR' ne doit pas être NULL, car cela n'est pas cohérent avec l'annotation SAL sur 'fread'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Déréférencement du pointeur NULL 'ELF_SYMBT_ENTRY_INFO_PTR'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 387,
+                  "startColumn": 5,
+                  "endLine": 387,
+                  "endColumn": 62
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_symbol_table",
+                  "decoratedName": "?parse_symbol_table@ELF_32@@QEAAPEAUELF_SYMBT_INFO@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 373,
+                            "startColumn": 47
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 377,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 378,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 379,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 380,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 384,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 385,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_INFO_PTR' peut avoir la valeur NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Entrer dans cette boucle, (supposer 'y<num')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 387,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_INFO_PTR' est déréférencé, mais peut encore avoir la valeur NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Déréférencement du pointeur NULL 'ELF_SYMBT_ENTRY_PTR'. Voir la ligne 381 pour un emplacement antérieur dans lequel cela peut se produire"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 387,
+                  "startColumn": 5,
+                  "endLine": 387,
+                  "endColumn": 62
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_symbol_table",
+                  "decoratedName": "?parse_symbol_table@ELF_32@@QEAAPEAUELF_SYMBT_INFO@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 373,
+                            "startColumn": 47
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 377,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 378,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_PTR' peut avoir la valeur NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 379,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 380,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_PTR' est un argument Entrée/sortie dans 'fread' (déclaré au niveau de c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdio.h:239)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que '<condition de branche>' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 384,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 385,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Entrer dans cette boucle, (supposer 'y<num')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 387,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_PTR' est déréférencé, mais peut encore avoir la valeur NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Lecture de données non valides à partir de 'ELF_SYMBT_ENTRY_PTR'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 387,
+                  "startColumn": 5,
+                  "endLine": 387,
+                  "endColumn": 62
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_symbol_table",
+                  "decoratedName": "?parse_symbol_table@ELF_32@@QEAAPEAUELF_SYMBT_INFO@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 373,
+                            "startColumn": 47
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 377,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 378,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_PTR' est un tableau"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 379,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 380,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_PTR' est un argument Entrée/sortie dans 'fread' (déclaré au niveau de c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdio.h:239)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorer cette branche, (supposer que '<condition de branche>' a la valeur false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 384,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 385,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Entrer dans cette boucle, (supposer 'y<num')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 387,
+                            "startColumn": 38
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'y' peut être égal à 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Continuer cette boucle, (supposer 'y<num')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 387,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "Lecture incorrecte depuis 'ELF_SYMBT_ENTRY_PTR', (en dehors de sa plage de lecture)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Dépassement de la mémoire tampon lors de l'écriture sur 'ELF_SYMBT_ENTRY_INFO_PTR'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 387,
+                  "startColumn": 5,
+                  "endLine": 387,
+                  "endColumn": 62
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_symbol_table",
+                  "decoratedName": "?parse_symbol_table@ELF_32@@QEAAPEAUELF_SYMBT_INFO@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 373,
+                            "startColumn": 47
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 377,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 378,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 379,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 380,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 384,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 385,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "'ELF_SYMBT_ENTRY_INFO_PTR' est un tableau de 0 octets"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Entrer dans cette boucle, (supposer 'y<num')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 387,
+                            "startColumn": 38
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'y' peut être égal à 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Continuer cette boucle, (supposer 'y<num')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 387,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "Écriture incorrecte sur 'ELF_SYMBT_ENTRY_INFO_PTR', (en dehors de la plage d'écriture)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Déréférencement du pointeur NULL 'symb_info'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                },
+                "region": {
+                  "startLine": 390,
+                  "startColumn": 4,
+                  "endLine": 390,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ELF_32::parse_symbol_table",
+                  "decoratedName": "?parse_symbol_table@ELF_32@@QEAAPEAUELF_SYMBT_INFO@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 373,
+                            "startColumn": 47
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 377,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 378,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 379,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 380,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 384,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 385,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 389,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "'symb_info' peut avoir la valeur NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+                          },
+                          "region": {
+                            "startLine": 390,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'symb_info' est déréférencé, mais peut encore avoir la valeur NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31630.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/21697/source/repos/READELF/READELF/src/ELF32.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "cf7c7524042886d06a58525bc4047e052f7d74e2826a5d8c2107b3bab2bfb31c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/21697/source/repos/readelf/readelf/inc/elf32_class.h"
+          },
+          "hashes": {
+            "sha-256": "49177f99903c0911c607121a212a4c2c585d45e37d5457d07a44ae98f222e814"
+          }
+        }
+      ]
+    }
+  ]
+}
