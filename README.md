@@ -1,2 +1,4 @@
 # READELF
-READELF is a simple ELF file parser 
+READELF versio 1.0 
+READELF is a simple elf file parser builded using C++ 
+
